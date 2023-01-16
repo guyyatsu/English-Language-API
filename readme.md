@@ -1,6 +1,6 @@
 # English Vocabulary Database Buildup
-![GitHub issue custom search in repo](https://img.shields.io/github/issues-search/guyyatsu/English-Language-API?label=Open%20Issues&query=is%3Aissue%20is%3Aopen)  
-![GitHub labels](https://img.shields.io/github/labels/guyyatsu/English-Language-API/toolkit)  
+![GitHub issue custom search in repo](https://img.shields.io/github/issues-search/guyyatsu/English-Language-API?label=Open%20Issues&query=is%3Aissue%20is%3Aopen)
+![GitHub labels](https://img.shields.io/github/labels/guyyatsu/English-Language-API/toolkit)
 The trick to reading the dictionary is locating your word within an easily indexed store of words and scanning 
 their associated definition into your pool of resources; much like it's python counterpart, the structure is a 
 {key:value} store.
@@ -12,6 +12,7 @@ any given words entry from raw html through it's meta tags.
 ## Module Imports
 
   - [Python Logging](#constants-definition): Logging is always useful; and steps should be taken to include it wherever you can.
+
   - [Python Requests](#build-query-url): The class object makes a request to a URL similar to ```https://dictionary.com/browse/{_search_tag}```.
 
   - [Beautiful Soup](#retrieve-description-from-data): BS4 is used to extract key points from the request data. 
