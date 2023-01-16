@@ -183,9 +183,9 @@ All of this is delivered to the end user through the use of the ```Description``
 
 
 ```python
-    def Description(self) -> pageDescription:
+    def Description(self) -> ScrapeObjectDescription:
         """
          The final wrapper for conducting a search within the english dictionary or thesaurus.
         """
-        return self.pageDescription()
+        return self.ScrapeObjectDescription()
 ```
