@@ -12,7 +12,6 @@ any given words entry from raw html through it's meta tags.
 ## Module Imports
 
   - [Python Logging](#constants-definition): Logging is always useful; and steps should be taken to include it wherever you can.
-
   - [Python Requests](#build-query-url): The class object makes a request to a URL similar to ```https://dictionary.com/browse/{_search_tag}```.
 
   - [Beautiful Soup](#retrieve-description-from-data): BS4 is used to extract key points from the request data. 
