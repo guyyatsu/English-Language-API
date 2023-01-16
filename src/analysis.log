@@ -1,0 +1,16 @@
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: cherry.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dictionary.com:443
+DEBUG:urllib3.connectionpool:https://dictionary.com:443 "GET /browse/cherry HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dictionary.com:443
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/cherry HTTP/1.1" 200 29678
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+INFO:root:Found description for cherry:
+The fruit of any of various trees belonging to the genus prunus, of the rose family, consisting of a pulpy, globular drupe enclosing a one-seeded smooth stone.
+
+
