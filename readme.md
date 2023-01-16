@@ -1,5 +1,6 @@
 # English Vocabulary Database Buildup
 ![GitHub issue custom search in repo](https://img.shields.io/github/issues-search/guyyatsu/English-Language-API?label=Open%20Issues&query=is%3Aissue%20is%3Aopen)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/guyyatsu/English-Language-API?color=pink&label=closed%20issues&style=plastic)
 ![GitHub labels](https://img.shields.io/github/labels/guyyatsu/English-Language-API/toolkit)  
 The trick to reading the dictionary is locating your word within an easily indexed store of words and scanning 
 their associated definition into your pool of resources; much like it's python counterpart, the structure is a 
