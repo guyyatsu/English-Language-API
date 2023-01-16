@@ -1,0 +1,21 @@
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: cherries.
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: cherries.
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: cherries.

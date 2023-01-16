@@ -1,0 +1,215 @@
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: cherries.
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: cherries.
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: cherries.
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: cherries.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dictionary.com:443
+DEBUG:urllib3.connectionpool:https://dictionary.com:443 "GET /browse/cherries HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dictionary.com:443
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/cherries HTTP/1.1" 301 48
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/cherry HTTP/1.1" 200 29678
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+INFO:root:Found description for cherries:
+Cherry definition, the fruit of any of various trees belonging to the genus prunus, of the rose family, consisting of a pulpy, globular drupe enclosing a one-seeded smooth stone.
+
+
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: blue.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dictionary.com:443
+DEBUG:urllib3.connectionpool:https://dictionary.com:443 "GET /browse/blue HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dictionary.com:443
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/blue HTTP/1.1" 200 34057
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+INFO:root:Found description for blue:
+The pure color of a clear sky; the primary color between green and violet in the visible spectrum, an effect of light with a wavelength between 450 and 500 nanometers.
+
+
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: red.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dictionary.com:443
+DEBUG:urllib3.connectionpool:https://dictionary.com:443 "GET /browse/red HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dictionary.com:443
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/red HTTP/1.1" 200 32846
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+INFO:root:Found description for red:
+Any of various colors resembling the color of blood; the primary color at one extreme end of the visible spectrum, an effect of light with a wavelength between 610 and 780 nanometers.
+
+
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: red.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dictionary.com:443
+DEBUG:urllib3.connectionpool:https://dictionary.com:443 "GET /browse/red HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dictionary.com:443
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/red HTTP/1.1" 200 32846
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+INFO:root:Found description for red:
+Any of various colors resembling the color of blood; the primary color at one extreme end of the visible spectrum, an effect of light with a wavelength between 610 and 780 nanometers.
+
+
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: red.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dictionary.com:443
+DEBUG:urllib3.connectionpool:https://dictionary.com:443 "GET /browse/red HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dictionary.com:443
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/red HTTP/1.1" 200 32846
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+INFO:root:Found description for red:
+Any of various colors resembling the color of blood; the primary color at one extreme end of the visible spectrum, an effect of light with a wavelength between 610 and 780 nanometers.
+
+
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: cherries.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dictionary.com:443
+DEBUG:urllib3.connectionpool:https://dictionary.com:443 "GET /browse/cherries HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dictionary.com:443
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/cherries HTTP/1.1" 301 48
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/cherry HTTP/1.1" 200 29678
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+INFO:root:Found description for cherries:
+Cherry definition, the fruit of any of various trees belonging to the genus prunus, of the rose family, consisting of a pulpy, globular drupe enclosing a one-seeded smooth stone.
+
+
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: cherry.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dictionary.com:443
+DEBUG:urllib3.connectionpool:https://dictionary.com:443 "GET /browse/cherry HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dictionary.com:443
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/cherry HTTP/1.1" 200 29678
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+INFO:root:Found description for cherry:
+The fruit of any of various trees belonging to the genus prunus, of the rose family, consisting of a pulpy, globular drupe enclosing a one-seeded smooth stone.
+
+
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: dog.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dictionary.com:443
+DEBUG:urllib3.connectionpool:https://dictionary.com:443 "GET /browse/dog HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dictionary.com:443
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/dog HTTP/1.1" 200 36772
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+INFO:root:Found description for dog:
+A domesticated canid, canis familiaris, bred in many varieties.
+
+
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: canid.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dictionary.com:443
+DEBUG:urllib3.connectionpool:https://dictionary.com:443 "GET /browse/canid HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dictionary.com:443
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/canid HTTP/1.1" 200 25412
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+INFO:root:Found description for canid:
+Any animal of the dog family canidae, including the wolves, jackals, hyenas, coyotes, foxes, and domestic dogs.
+
+
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: rose.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dictionary.com:443
+DEBUG:urllib3.connectionpool:https://dictionary.com:443 "GET /browse/rose HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dictionary.com:443
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/rose HTTP/1.1" 200 35122
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+INFO:root:Found description for rose:
+Any of the wild or cultivated, usually prickly-stemmed, pinnate-leaved, showy-flowered shrubs of the genus rosa.
+
+
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: rose.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dictionary.com:443
+DEBUG:urllib3.connectionpool:https://dictionary.com:443 "GET /browse/rose HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dictionary.com:443
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/rose HTTP/1.1" 200 35122
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+INFO:root:Found description for rose:
+Any of the wild or cultivated, usually prickly-stemmed, pinnate-leaved, showy-flowered shrubs of the genus rosa.
+
+
+INFO:root:
+
+  --Using English Language API.--
+
+DEBUG:root:English Language is set to True.
+DEBUG:root:Using https://dictionary.com.
+INFO:root:Searching dictionary for word: torah.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dictionary.com:443
+DEBUG:urllib3.connectionpool:https://dictionary.com:443 "GET /browse/torah HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.dictionary.com:443
+DEBUG:urllib3.connectionpool:https://www.dictionary.com:443 "GET /browse/torah HTTP/1.1" 200 26396
+DEBUG:charset_normalizer:Encoding detection: utf_8 is most likely the one.
+INFO:root:Found description for torah:
+The pentateuch, being the first of the three jewish divisions of the old testament.
+
+

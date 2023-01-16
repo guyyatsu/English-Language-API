@@ -70,9 +70,7 @@ englishThesaurus = "https://thesaurus.com"
 class EnglishLanguageAPI:
     """
     The EnglishLanguageAPI class accepts a single word and searches the dictionary for a matching description.
-    
     """
-
 
     def __init__(self, SearchTag, dictionary=True):
         """
@@ -105,97 +103,98 @@ class EnglishLanguageAPI:
             f"Searching {self.BaseURL.split('/')[-1].split('.')[0]} for word: {self.SearchTag}."
         )
 
+    # ### Build Query URL
+    # The modular URL system allows for direct querying of a page, given a known word.  The ```/browse``` sub-path
+    # accepts a _single_, **singlular** word to [index the dictionary](#request-html-data-from-source) for a proper
+    # [description](#retrieve-description-from-data).
 
-# ### Build Query URL
-# The modular URL system allows for direct querying of a page, given a known word.  The ```/browse``` sub-path
-# accepts a _single_, **singlular** word to [index the dictionary](#request-html-data-from-source) for a proper
-# [description](#retrieve-description-from-data).
-
-# In[ ]:
-
-
-def SearchRequestURL(self) -> str:
-    """
-    Prepare a URL that leads directly to the search terms.
-    For the dictionary.com domain, we simply use forward slashes.
-      -- All lower-case, of course.
-    """
-    return str(
-        f"{self.BaseURL.lower()}/"
-        f"{self.SearchRoute.lower()}/"
-        f"{self.SearchTag.lower()}"
-    )
+    # In[ ]:
 
 
-# ### Request HTML Data From Source
-# After recieving a [proper URL](#build-query-url) to request a page from, the system makes the request and passes the resulting content
-# to a [```BeautifulSoup```](#retrieve-description-from-data) object to be scraped for content.
-
-# In[ ]:
-
-
-def RawPageResults(self) -> BeautifulSoup:
-    """
-    Packages the search query into a BS4.BeautifulSoup object to
-    be scraped by EnglishLanguageAPI.pageDescription().
-    """
-    return BeautifulSoup(
-        requests.get(self.SearchRequestURL())\
-                .content,
-        "html.parser"
-    )
+    def SearchRequestURL(self) -> str:
+        """
+        Prepare a URL that leads directly to the search terms.
+        For the dictionary.com domain, we simply use forward slashes.
+          -- All lower-case, of course.
+        """
+        return str(
+            f"{self.BaseURL.lower()}/"
+            f"{self.SearchRoute.lower()}/"
+            f"{self.SearchTag.lower()}"
+        )
 
 
-# ### Retrieve Description From Data
-# The page being requested by [```EnglishLanguageAPI.RawPageResults```](#request-html-data-from-source) is now scraped for a description of the original
-# input by finding a meta-tag within the page source named 'description'.
-# 
-# The description is then stripped of any unneccessarily repetitive strings, such as itself and leftover text options
-# from the original page.
-# 
-# With the description string properly sanitized, it is [given back to the caller](#return-findings-to-caller).
+    # ### Request HTML Data From Source
+    # After recieving a [proper URL](#build-query-url) to request a page from, the system makes the request and passes the resulting content
+    # to a [```BeautifulSoup```](#retrieve-description-from-data) object to be scraped for content.
 
-# In[ ]:
+    # In[ ]:
 
 
-def ScrapeObjectDescription(self) -> str:
-    """
-    Search the BS4 object for the search tags description in the metatags header.
-    The resulting text is stripped of repetitive patterns and given back as a string.
-
-    The html meta tag named 'description' usually contains a pretty solid meaning
-    for the word we're trying to describe, so we'll use it with our noun.
-
-    The description also typically carries a few repetitive strings, such as the
-    noun itself followd by the _word_ description as well as an option to 'See more.'
-    from the original interactive page.  These will be stripped from the string
-    before being returned.
-    """
-
-    _page = self.RawPageResults()
-
-    _description = \
-        _page.find("meta", {"name": "description"})\
-             .get("content")
-
-    _description = _description.replace(f"{self.SearchTag.title()} definition, ", "")
-    _description = _description.replace(" See more.", "")
-    _description = _description.capitalize()
-
-    logging.info(f"Found description for {self.SearchTag}:\n{_description}\n\n")
-    return _description
+    def RawPageResults(self) -> BeautifulSoup:
+        """
+        Packages the search query into a BS4.BeautifulSoup object to
+        be scraped by EnglishLanguageAPI.pageDescription().
+        """
+        return BeautifulSoup(
+            requests.get(self.SearchRequestURL())\
+                    .content,
+            "html.parser"
+        )
 
 
-# ### Return Findings to Caller
-# All of this is delivered to the end user through the use of the ```Description``` method attached to the
-# [```EnglishLanguageAPI```](#english-language-api) object initialized with the given input word.
+    # ### Retrieve Description From Data
+    # The page being requested by [```EnglishLanguageAPI.RawPageResults```](#request-html-data-from-source) is now scraped for a description of the original
+    # input by finding a meta-tag within the page source named 'description'.
+    # 
+    # The description is then stripped of any unneccessarily repetitive strings, such as itself and leftover text options
+    # from the original page.
+    # 
+    # With the description string properly sanitized, it is [given back to the caller](#return-findings-to-caller).
 
-# In[ ]:
+    # In[ ]:
 
 
-def Description(self) -> pageDescription:
-    """
-     The final wrapper for conducting a search within the english dictionary or thesaurus.
-    """
-    return self.pageDescription()
+    def ScrapeResults(self) -> str:
+        """
+        Search the BS4 object for the search tags description in the metatags header.
+        The resulting text is stripped of repetitive patterns and given back as a string.
+  
+        The html meta tag named 'description' usually contains a pretty solid meaning
+        for the word we're trying to describe, so we'll use it with our noun.
 
+        The description also typically carries a few repetitive strings, such as the
+        noun itself followd by the _word_ description as well as an option to 'See more.'
+        from the original interactive page.  These will be stripped from the string
+        before being returned.
+        """
+
+        _page = self.RawPageResults()
+
+        _description = \
+            _page.find("meta", {"name": "description"})\
+                 .get("content")
+
+        _description = _description.replace(f"{self.SearchTag.title()} definition, ", "")
+        _description = _description.replace(" See more.", "")
+        _description = _description.capitalize()
+
+        logging.info(f"Found description for {self.SearchTag}:\n{_description}\n\n")
+        return _description
+
+
+    # ### Return Findings to Caller
+    # All of this is delivered to the end user through the use of the ```Description``` method attached to the
+    # [```EnglishLanguageAPI```](#english-language-api) object initialized with the given input word.
+
+    # In[ ]:
+ 
+
+    def Description(self) -> ScrapeResults:
+        """
+         The final wrapper for conducting a search within the english dictionary or thesaurus.
+        """
+        return self.ScrapeResults()
+
+    def Title(self):
+        return self.SearchTag.capitalize()
